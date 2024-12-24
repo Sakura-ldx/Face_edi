@@ -259,6 +259,7 @@ If you want to use PIO to try precise information editing, you can use the follo
 ```bash
 cd scripts
 python edit_test.py --config ../configs/edit/edit_seg.yaml --save_folder "your dir"
+```
 
 ### Evaluation
 #### (1) PSNR, MSE, and LPIPS
