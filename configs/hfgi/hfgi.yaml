@@ -1,0 +1,8 @@
+embed_mode: 'encoder'
+refine_mode: 'hfgi'
+test_dataset_path: "/nas/Database/Public/CelebA-HQ/test100/"
+test_batch_size: 1
+output_dir: './test_edit/hfgi'
+checkpoint_path: "pretrained_models/hfgi/hfgi_ffhq_ori.pt"
+save_code: True
+start_from_latent_avg: True

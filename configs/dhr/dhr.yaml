@@ -1,0 +1,22 @@
+exp_dir: 'experiments/dhr'
+refine_mode: 'dhr'
+test_dataset_path: "/nas/Database/Public/CelebA-HQ/test100/"
+test_batch_size: 1
+output_dir: './test_edit/dhr'
+checkpoint_path: "pretrained_models/hfgi/hfgi_ffhq_ori.pt"
+save_code: True
+
+# coarse inv
+optim_step: 40
+w_plus: False
+
+# dhr optiosn
+dhr_feature_idx: 11
+dhr_weight_lr: 1.5e-3
+dhr_feature_lr: 9e-2
+dhr_weight_step: 50
+dhr_feature_step: 100
+dhr_l2_lambda: 1.
+dhr_lpips_lambda: 1.
+dhr_theta1: 0.7
+dhr_theta2: 0.8

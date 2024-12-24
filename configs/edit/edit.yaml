@@ -1,0 +1,17 @@
+embed_mode: 'encoder'
+test_dataset_path: "/home/ssd2/ldx/workplace/GANInverter-dev/test_edit/e4e/code"
+test_ld_path: "/home/ssd2/ldx/workplace/GANInverter-dev/edit_data/kp_pt"
+test_inversion_path: "/nas/Database/Public/CelebA-HQ/test100"
+test_batch_size: 1
+output_dir: '../test_edit/e4e'
+save_folder: "edit_kp_total_debug"
+checkpoint_path: "../pretrained_models/e4e/e4e_ffhq_r50_wp_ori.pt"
+start_from_latent_avg: True
+optim_step: 1000
+optim_l2_lambda: 0.0
+optim_lpips_lambda: 0.0
+noise_regularize: 0.0
+optim_kp_lambda: 1.0
+optim_id_lambda: 0.0
+optim_w_norm_lambda: 0.0
+lr: 0.001

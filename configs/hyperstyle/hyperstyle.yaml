@@ -1,0 +1,8 @@
+embed_mode: 'encoder'
+refine_mode: 'hyperstyle'
+test_dataset_path: "/nas/Database/Public/CelebA-HQ/test100"
+test_batch_size: 1
+output_dir: '../edit_data/hyperstyle'
+save_code: True
+hyperstyle_iteration: 5
+hypernet_checkpoint_path: "../pretrained_models/hyperstyle/hyperstyle_ffhq_ori.pt"
