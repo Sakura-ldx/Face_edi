@@ -257,12 +257,8 @@ python scripts/edit.py -c configs/optim/optim_celeba-hq.yaml --embed_mode code -
 #### (3) Edit with PIO
 If you want to use PIO to try precise information editing, you can use the following commands.
 ```bash
-cd web
-python web.py
-```
-After that, you will be able to enter a web page, as shown in the following picture.
-<img src="./docs/web.png" alt="inference_pipeline" style="zoom: 15%;" />
-In this web, you can input a yaml file path, then choose your own source image and target image, and click "Submit" button to get the edit result.
+cd scripts
+python edit_test.py --config ../configs/edit/edit_seg.yaml --save_folder "your dir"
 
 ### Evaluation
 #### (1) PSNR, MSE, and LPIPS
