@@ -262,6 +262,7 @@ python web.py
 ```
 After that, you will be able to enter a web page, as shown in the following picture.
 <img src="./docs/web.png" alt="inference_pipeline" style="zoom: 15%;" />
+In this web, you can input a yaml file path, then choose your own source image and target image, and click "Submit" button to get the edit result.
 
 ### Evaluation
 #### (1) PSNR, MSE, and LPIPS
