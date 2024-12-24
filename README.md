@@ -254,6 +254,15 @@ If you have inferred images first and saved the latent codes, you can edit these
 python scripts/edit.py -c configs/optim/optim_celeba-hq.yaml --embed_mode code --test_dataset_path /path/to/latent/codes/ --edit_mode interfacegan --edit_path editing/interfacegan_directions/age.pt --edit_factor 1.0
 ```
 
+#### (3) Edit with PIO
+If you want to use PIO to try precise information editing, you can use the following commands.
+```bash
+cd web
+python web.py
+```
+After that, you will be able to enter a web page, as shown in the following picture.
+<img src="./docs/web.png" alt="inference_pipeline" style="zoom: 15%;" />
+
 ### Evaluation
 #### (1) PSNR, MSE, and LPIPS
 These three metrics can be evaluated during.
